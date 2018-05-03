@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <div class="container"> 
+    <a class="navbar-brand">
+         Reservation
+    </a>
+    <ul class="navbar-nav mx-auto">
+      <li *ngFor="let item of navArr" class="list-item m-3 ">
+          <a [routerLink]="[item.url]">
+            <span class="navbar-text navItem">{{item.title}}</span>
+          </a>
+      </li>
+    </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <gw-log-in></gw-log-in>
+        </li>
+
+      </ul>
+  </div>
+</nav>
